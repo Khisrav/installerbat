@@ -1,4 +1,41 @@
 <script setup lang="ts">
+useHead({
+  title: "InstallerBat - Install Multiple Apps at Once with Ease",
+  meta: [
+    {
+      name: "description",
+      content:
+        "InstallerBat allows you to generate a custom PowerShell script to install multiple essential applications at once, saving you time and effort. Private and secure with no server-side processing.",
+    },
+    {
+      name: "keywords",
+      content:
+        "app installer, software installer, install multiple apps, PowerShell installer, batch software installer, custom installer, privacy focused",
+    },
+    { name: "robots", content: "index, follow" },
+    { name: "author", content: "Khisrav Khudoyorov" },
+    { property: "og:title", content: "InstallerBat - Install Multiple Apps at Once" },
+    {
+      property: "og:description",
+      content:
+        "Generate a custom PowerShell script to install all your essential applications in one click, ensuring privacy and no server-side processing.",
+    },
+    { property: "og:type", content: "website" },
+    { property: "og:url", content: "https://installerbat.netlify.app" }, // Update with your actual URL
+    { property: "og:image", content: "/installerbat-thumbnail.png" }, // Update with your actual image path
+  ],
+});
+
+// Optional useSeoMeta for more nuanced control over SEO meta tags
+useSeoMeta({
+  title: "InstallerBat - Install Multiple Apps at Once",
+  description:
+    "Save time by installing essential software in one go with InstallerBat. Generate a custom PowerShell installer that ensures privacy and local processing.",
+  keywords:
+    "software, apps, installer, privacy, PowerShell, batch installation, tools, custom installer",
+});
+
+// Rest of your existing code
 const { data: programs } = await useFetch("/api/programs");
 const selectedPrograms = reactive([]);
 const isLoading = ref(false);
