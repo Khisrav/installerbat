@@ -81,7 +81,7 @@ const generateInstaller = async (selectedPrograms) => {
 <template>
   <div>
     <h1 class="font-bold text-2xl text-center my-4 md:text-3xl">
-      Install any apps at once
+      Install multiple apps at once
     </h1>
     <p class="mb-2">
       Choose the essential software you need, and we'll generate a custom installer for
