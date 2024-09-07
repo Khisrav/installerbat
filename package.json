@@ -11,7 +11,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.8.0",
     "@nuxt/ui": "^2.18.4",
     "nuxt": "^3.12.4"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.4.4",
+    "@supabase/supabase-js": "^2.45.3"
   }
 }

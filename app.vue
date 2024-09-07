@@ -1,13 +1,20 @@
 <template>
+  <AppHeader/>
   <UContainer>
-    <UCard class="mt-10">
-      <template #header>
-        <div class="flex justify-between">
-          <h1>Welcome to Nuxt UI Starter</h1>
-          <ColorScheme><USelect v-model="$colorMode.preference" :options="['system', 'light', 'dark']" /></ColorScheme>
-        </div>
-      </template>
-      <UButton icon="i-heroicons-book-open" to="https://ui.nuxt.com" target="_blank">Open Nuxt UI Documentation</UButton>
-    </UCard>
+    <NuxtPage/>
   </UContainer>
+  <AppFooter/>
 </template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+</style>
