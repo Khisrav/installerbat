@@ -53,7 +53,7 @@ const generateInstaller = async (selectedPrograms) => {
     <p class="mb-2">
       Get everything ready in minutes and boost your productivity instantly.
     </p>
-    <p class="mb-2">
+    <p class="mb-4">
       All installations are handled locally using secure PowerShell commands, ensuring
       your privacy with no server-side processing.
     </p>
