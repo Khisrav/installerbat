@@ -13,7 +13,8 @@
     "@nuxt/devtools": "latest",
     "@nuxt/image": "^1.8.0",
     "@nuxt/ui": "^2.18.4",
-    "nuxt": "^3.12.4"
+    "nuxt": "^3.12.4",
+    "nuxt-gtag": "^3.0.1"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.4.4",
