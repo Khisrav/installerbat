@@ -64,7 +64,7 @@ const generateInstaller = async (selectedPrograms) => {
         :key="program.id"
         class="block cursor-pointer p-4 font-medium rounded-md shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 dark:bg-gray-900 bg-white dark:hover:bg-gray-800 hover:bg-gray-50"
         :class="{
-          'ring-gray-500 dark:ring-gray-200': selectedPrograms.includes(program.id),
+          'ring-gray-500 dark:ring-gray-100': selectedPrograms.includes(program.id),
         }"
       >
         <UCheckbox
